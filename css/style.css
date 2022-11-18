@@ -20,19 +20,23 @@ body {
     padding: 1.5rem;
     border-radius: 1.3rem;
     gap: 2rem;
-    -webkit-box-shadow: 2px 2px 19px 6px hsl(217, 54%, 8%);
-    -moz-box-shadow:    2px 2px 19px 6px hsl(217, 54%, 8%);
-    box-shadow:         2px 2px 19px 6px hsl(217, 54%, 8%);
+    box-shadow: 2px 2px 19px 6px hsl(217, 54%, 8%);
 }
+
 .card .nft {
     width: 27rem;
     height: 27rem;
     border-radius: 0.7rem;
-    background-image: url(../images/image-equilibrium.jpg);
-    background-size: 27rem 27rem;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.card .nft img {
+    position: absolute;
+    width: 27rem;
+    height: 27rem;
+    border-radius: 0.7rem;
 }
 
 .card .nft .icon-view {
@@ -43,6 +47,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
     opacity: 0;
 }
 
@@ -69,24 +74,23 @@ body {
 }
 
 .card .card-information .description a {
-font-size: 2rem;
+    font-size: 2rem;
 }
 
 .card .card-information .description a:hover {
-color: hsl(178, 100%, 50%);
+    color: hsl(178, 100%, 50%);
 }
 
 .card .card-information .description p {
-font-size: 1.5rem;
-font-weight: 300;
-color: hsl(215, 51%, 70%);
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
 }
 
 .card .card-information .description .price-information {
     display: flex;
     margin-top: 1rem;
     justify-content: space-between;
-
 }
 
 .card .card-information .description .price-information .price {
@@ -133,6 +137,6 @@ color: hsl(215, 51%, 70%);
     color: hsl(215, 51%, 70%);
 }
 
-.card .card-information .creator p a:hover{
+.card .card-information .creator p a:hover {
     color: hsl(178, 100%, 50%);
 }
